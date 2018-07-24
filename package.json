@@ -1,0 +1,37 @@
+{
+  "name": "electron-test",
+  "version": "0.0.2",
+  "description": "Electron app",
+  "main": "index.js",
+  "build": {
+    "appId": "com.github.nanografon.electronupdater",
+    "mac": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-updater": "^3.0.3"
+  },
+  "devDependencies": {
+    "electron": "^2.0.5",
+    "electron-builder": "^20.25.0"
+  },
+  "scripts": {
+    "gh-publish": "build -p always",
+    "start": "NODE_ENV=test electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nanografon/Electron-App.git"
+  },
+  "author": "Vasiliy Serpokryl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nanografon/Electron-App/issues"
+  },
+  "homepage": "https://github.com/Nanografon/Electron-App#readme"
+}
